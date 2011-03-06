@@ -1,0 +1,10 @@
+package model.fruit;
+
+declare Fruit
+  name: String
+end
+
+declare WeightOfFruit
+  fruit: Fruit
+  weight: Integer
+end
