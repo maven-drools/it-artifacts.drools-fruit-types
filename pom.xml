@@ -27,7 +27,7 @@
 
   <groupId>de.lightful.maven.drools.plugin.itartifacts</groupId>
   <artifactId>drools-fruit-types</artifactId>
-  <version>0.0.23</version>
+  <version>0.0.24-SNAPSHOT</version>
   <packaging>knowledge-module</packaging>
 
   <name>Maven Drools Support :: Plugin :: IT Artifacts :: Drools Fruit Types</name>
