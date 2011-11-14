@@ -21,34 +21,24 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>de.lightful.maven.drools.poms</groupId>
-    <artifactId>multi-target-knowledge-module</artifactId>
-    <version>2</version>
+    <groupId>de.lightful.poms</groupId>
+    <artifactId>standard-plugins</artifactId>
+    <version>29</version>
   </parent>
 
   <groupId>de.lightful.maven.drools.plugin.itartifacts</groupId>
   <artifactId>drools-fruit-types</artifactId>
-  <version>0.0.18-SNAPSHOT</version>
-  <packaging>knowledge-module</packaging>
+  <version>0.1.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>Maven Drools Support :: Plugin :: IT Artifacts :: Drools Fruit Types</name>
-  <description>A pre-packaged drools knowledge package containing fruit data types, used for integration testing</description>
+  <description>A pre-compiled drools knowledge package containing fruit data types, used for integration testing</description>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>de.lightful.maven.plugins</groupId>
-        <artifactId>maven-drools-plugin</artifactId>
-        <configuration>
-          <passes>
-            <pass>
-              <ruleSourceRoot>${basedir}/src/main/rules/pass-one</ruleSourceRoot>
-            </pass>
-          </passes>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+  <modules>
+    <module>drools-fruit-types-5.1.1</module>
+    <module>drools-fruit-types-5.2.0.Final</module>
+    <module>drools-fruit-types-5.3.0.Final</module>
+  </modules>
 
   <scm>
     <connection>scm:git:git@github.com:maven-drools/it-artifacts.drools-fruit-types.git</connection>
